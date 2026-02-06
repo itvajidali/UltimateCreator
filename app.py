@@ -24,7 +24,7 @@ def process_video_job(job_id, prompt, duration, voice_id, orientation, mood):
             jobs[job_id]['progress'] = 10
             
             # 1. Generate Script (Groq)
-            script_data = generate_script(prompt, duration, Config.GROQ_API_KEY)
+            script_data = generate_script(prompt, duration, voice_id, Config.GROQ_API_KEY)
             jobs[job_id]['script'] = script_data
             jobs[job_id]['progress'] = 30
             jobs[job_id]['status'] = 'fetching_media'

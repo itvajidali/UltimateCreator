@@ -1825,3 +1825,507 @@ Remember Him, trust Him, and know that with Allah, you are never alone."
    ]
 }
 ----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments":[
+      {
+         "text":"It was 12:17 AM on a stormy night. The rain had stopped, but the streets were still glistening with water. Arav stood alone at the bus stop, his phone's battery dying at 3%, with no sign of the last bus.",
+         "image_query":"stormy night bus stop"
+      },
+      {
+         "text":"Suddenly, an old bus appeared in the distance, its headlights shining like aged eyes. The bus stopped, and the driver asked without looking at Arav, 'Getting on?' Arav felt strange, but he boarded the bus anyway.",
+         "image_query":"old bus at night"
+      },
+      {
+         "text":"Inside the bus, there was an eerie silence. About 8-10 people sat quietly, staring out the window. No one spoke. The conductor handed Arav a ticket with a destination that read 'Final Stop'. Arav asked, 'Brother, what's this place?' The conductor looked at him for the first time, his eyes empty, and whispered, 'Where everyone gets off.'",
+         "image_query":"empty bus at night"
+      },
+      {
+         "text":"As the bus moved forward, the scenery changed. Streetlights disappeared, and buildings gave way to dark, twisted trees. At each stop, passengers got off, their faces filled with an otherworldly aura. An old woman, a man with a burned face, and a child who seemed to be floating – all stepped off the bus, leaving Arav with a sense of dread.",
+         "image_query":"dark forest road"
+      },
+      {
+         "text":"Finally, the bus halted at a graveyard, the headlights illuminating crumbling headstones. The conductor announced, 'Your stop.' Arav realized he was among the dead, a passenger on a journey from which there was no return. The bus door opened, and with a chill, Arav stepped out into the darkness, his name etched on a new grave, as the bus vanished into the night, awaiting its next passenger.",
+         "image_query":"graveyard at night"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "It was 12:17 AM on a rainy night. The streets were still glistening with water, and Arav stood alone at the bus stop. His mobile phone's battery was at 3%, and there was no sign of the last bus.",
+           "image_query": "rainy night bus stop"
+       },
+       {
+           "text": "Suddenly, an old bus appeared in the distance. Its headlights were yellow, like old eyes. The bus stopped, and the driver asked without looking at Arav, 'Do you want to get on?'",
+           "image_query": "old bus at night"
+       },
+       {
+           "text": "Arav found it strange that the bus was running so late at night, but he got on anyway. Inside, the bus was eerily quiet. About 8-10 people were sitting, all staring out the window. No one was talking. The conductor handed Arav a ticket with the destination 'Final Stop' printed on it.",
+           "image_query": "inside old bus at night"
+       },
+       {
+           "text": "As the bus moved forward, the scenery outside changed. Streetlights disappeared, and buildings gave way to dark, twisted trees. At each stop, passengers got off, including an old woman who warned Arav, 'You shouldn't have come...' A man with a burned face and a child who seemed to be floating also got off.",
+           "image_query": "dark twisted trees at night"
+       },
+       {
+           "text": "Finally, the bus stopped at a graveyard. The conductor said, 'You've arrived.' Arav realized he was dead, and the bus was a journey to the afterlife. The conductor showed him a file with his photo and the time of his death. Arav remembered the accident that killed him and stepped out of the bus into the unknown.",
+           "image_query": "graveyard at night"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "रात के ठीक 12:17 बजे थे। बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं। आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।",
+           "image_query": "rainy night street"
+       },
+       {
+           "text": "तभी दूर से एक पुरानी सी बस आती दिखी। उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें। बस रुकी। ड्राइवर ने बिना उसकी तरफ़ देखे कहा, “चढ़ना है?”",
+           "image_query": "old bus approaching at night"
+       },
+       {
+           "text": "बस के अंदर अजीब सन्नाटा था। करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे। कोई बात नहीं कर रहा था। कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।",
+           "image_query": "interior of old bus at night"
+       },
+       {
+           "text": "आरव ने पूछा, “भैया, ये कौन सी जगह है?” कंडक्टर ने पहली बार उसकी तरफ़ देखा। उसकी आँखें… बिल्कुल खाली थीं। उसने धीरे से कहा, “जहाँ सब उतरते हैं।”",
+           "image_query": "empty eyes of conductor"
+       },
+       {
+           "text": "बस चल पड़ी। जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई। स्ट्रीट लाइट्स गायब हो गईं। इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े। और आखिर में बस अंतिम पड़ाव पर रुकी।",
+           "image_query": "abandoned road with trees at night"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Loon kya hota hai"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "नमस्कार दोस्तों, आज हम बात करने जा रहे हैं लून के बारे में। लून क्या होता है, यह जानने से पहले हमें यह समझना होगा कि यह शब्द किस संदर्भ में उपयोग किया जा रहा है।",
+           "image_query": "loony tunes cartoon"
+       },
+       {
+           "text": "लून का अर्थ हो सकता है पागल या अनियंत्रित व्यक्ति। यह शब्द अक्सर किसी ऐसे व्यक्ति के लिए उपयोग किया जाता है जो अपने विचारों या कार्यों में अत्यधिक उत्साही या अस्थिर होता है।",
+           "image_query": "crazy person laughing"
+       },
+       {
+           "text": "लेकिन लून का एक और अर्थ भी हो सकता है, जो चंद्रमा से संबंधित है। लूना चंद्रमा के लिए लैटिन शब्द है, और यह शब्द अक्सर चंद्रमा से जुड़ी चीजों के लिए उपयोग किया जाता है।",
+           "image_query": "full moon night sky"
+       },
+       {
+           "text": "चंद्रमा के संदर्भ में, लून का अर्थ हो सकता है चंद्रमा का एक चक्र या चरण। चंद्रमा पृथ्वी की परिक्रमा करते हुए विभिन्न चरणों से गुजरता है, जिन्हें अक्सर लूनर चक्र के रूप में जाना जाता है।",
+           "image_query": "lunar cycle phases"
+       },
+       {
+           "text": "इस प्रकार, लून का अर्थ विभिन्न संदर्भों में भिन्न हो सकता है। यह शब्द पागलपन से लेकर चंद्रमा के चरणों तक के लिए उपयोग किया जा सकता है, और इसका अर्थ समझने के लिए यह महत्वपूर्ण है कि हम इसके उपयोग के संदर्भ को समझें।",
+           "image_query": "lunar surface exploration"
+       }
+   ]
+}
+----------------

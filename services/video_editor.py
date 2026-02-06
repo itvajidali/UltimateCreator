@@ -23,7 +23,7 @@ def text_wrap(text, font_size, max_width):
         lines.append(" ".join(current_line))
     return "\n".join(lines)
 
-def assemble_video(script_data, output_path, orientation='landscape'):
+def assemble_video(script_data, output_path, orientation='landscape', mood='random'):
     """
     Assembles video segments using ffmpeg-python.
     script_data: List of dicts with 'image_path', 'audio_path'

@@ -42,10 +42,19 @@ def generate_thumbnail(video_path, text, output_path):
             # Dynamic Font Size (roughly 10% of height)
             font_size = int(height * 0.10)
             
+            # Prioritize Hindi-supporting font (Mangal)
+            font_path = os.path.join("static", "fonts", "mangal.ttf")
+            if not os.path.exists(font_path):
+                font_path = os.path.join("static", "fonts", "arial.ttf")
+            
             try:
-                # Try to use Arial/Impact if available
-                font = ImageFont.truetype("arial.ttf", font_size)
+                # Try selected font, fallback to system arial if needed
+                if os.path.exists(font_path):
+                    font = ImageFont.truetype(font_path, font_size)
+                else:
+                    font = ImageFont.truetype("arial.ttf", font_size)
             except:
+                print("Warning: Custom fonts failed, loading default.")
                 font = ImageFont.load_default()
             
             # Wrap Text
