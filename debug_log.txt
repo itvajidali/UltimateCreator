@@ -1,0 +1,1827 @@
+Generating script using Ollama model: llama3
+General Ollama Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+Generating script using Ollama model: llama3
+General Ollama Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+Generating script using Ollama model: llama3
+General Ollama Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+Generating script using Ollama model: tinyllama
+Generating script using Ollama model: tinyllama
+Generating script using Ollama model: tinyllama
+Generating script using Ollama model: tinyllama
+--- PROMPT ---
+You are a helper that creates JSON for video generation.
+    Topic: "Dancing a girl in the rain"
+    Duration: long (Target: 10 segments)
+
+    Output a JSON List of objects. Each object must have:
+    "text": The narration sentence.
+    "image_query": A search keyword for a stock image.
+
+    Example format:
+    [
+      {"text": "The sun rises over the mountains.", "image_query": "sunrise mountains"},
+      {"text": "Birds begin to sing.", "image_query": "birds singing"}
+    ]
+
+    Return ONLY the JSON. No other text.
+    
+--- OUTPUT ---
+Yes, this is possible using a JSON API. Here's an example of how you could create a JSON file with the desired output:
+
+```json
+[
+  {
+    "text": "The sun rise over the mountains",
+    "image_query": "sunrise mountains"
+  },
+  {
+    "text": "Biord sings in the morning sky.",
+    "image_query": "birds singing"
+  }
+]
+```
+
+Once you have this JSON file, you can use a JSON API such as the one provided by AWS to convert it into a playable script that your AI assistant can execute. This can be done using tools like JSON-to-script or JSONLint. Once converted, the AI assistant can execute the resulting script and generate the desired video.
+----------------
+Generating script using Ollama model: tinyllama
+--- PROMPT ---
+You are a helper that creates JSON for video generation.
+    Topic: "History of India"
+    Duration: long (Target: 10 segments)
+    IMPORTANT: Write the 'text' fields in HINDI (Devanagari script). Keep 'image_query' in English.
+
+    Output a JSON List of objects. Each object must have:
+    "text": The narration sentence.
+    "image_query": A search keyword for a stock image.
+
+    Example format:
+    [
+      {"text": "Suraj pahadon ke piche se ug raha hai.", "image_query": "sunrise mountains"},
+      {"text": "Pakshee gaa rahe hain.", "image_query": "birds singing"}
+    ]
+
+    Return ONLY the JSON. No other text.
+    
+--- OUTPUT ---
+[
+    {
+        "text": "Suraj pahadon ke piche se ug raha hai. Sunrise mountains",
+        "image_query": "https://cdn.pixabay.com/photo/2019/11/25/15/37/birds-4845655__300.jpg"
+    },
+    {
+        "text": "Paakshee gaa rahe hain. Birds singing",
+        "image_query": "https://cdn.pixabay.com/photo/2019/11/24/23/55/birds-4838587__300.jpg"
+    }
+]
+----------------
+Generating script using Ollama model: tinyllama
+--- PROMPT ---
+You are a script writer.
+    Goal: Create a video script about "History of India".
+    Language: HINDI
+    Duration: 10 segments.
+
+    Return these exact JSON fields for each segment:
+    - "text": The narration sentence.
+    - "image_query": English search keyword.
+
+    STRICT JSON OUTPUT ONLY. NO EXPLANATION.
+
+    [
+      {"text": "First sentence about History of India...", "image_query": "keyword1"},
+      {"text": "Second sentence...", "image_query": "keyword2"}
+    ]
+    
+--- OUTPUT ---
+[
+   {"text": "In the year 1500 BC, the Aryans migrated from Central Asia to India. They brought with them a complex agricultural system based on irrigation and cereal cultivation. In 1857 AD, a British army led by General Duleep Singh marched through Delhi to capture the throne from the emperor.", "image_query": "keyword1"},
+   {"text": "In 1947, India became independent, and it joined the United Nations as a founding member. It was the third Asian nation to do so after Japan and Pakistan. ", "image_query": "keyword2"},
+   {"text": "On August 15, 1945, Indian independence leader Subhas Chandra Bose made a speech in London, where he called for Indian independence.", "image_query": "keyword3"}
+]
+----------------
+Generating script using Ollama model: llama3
+General Ollama Error: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+Generating script using Ollama model: gemma:2b
+--- PROMPT ---
+You are a script writer.
+    Goal: Create a video script about "Baarish kaise hoti hai?".
+    Language: HINDI
+    Duration: 10 segments.
+
+    Return these exact JSON fields for each segment:
+    - "text": The narration sentence.
+    - "image_query": English search keyword.
+
+    STRICT JSON OUTPUT ONLY. NO EXPLANATION.
+
+    [
+      {"text": "First sentence about Baarish kaise hoti hai?...", "image_query": "keyword1"},
+      {"text": "Second sentence...", "image_query": "keyword2"}
+    ]
+    
+--- OUTPUT ---
+[
+  {"text": "First sentence about Baarish kaise hoti hai?...", "image_query": "Baarish mein kya hoti hai?"},
+  {"text": "Second sentence...", "image_query": "Baarish mein kya hoti hai?"}
+]
+----------------
+Generating script using Ollama model: gemma:2b
+--- PROMPT ---
+Topic: barish kaise hoti h
+    Target Duration: 10 sentences.
+    Language: HINDI (Devanagari)
+
+    Instructions:
+    1. Write a 10-sentence script explaining the topic.
+    2. Suggest an English Search Keyword for each sentence.
+    3. Output STRICT JSON format.
+
+    JSON Structure:
+    [
+      { "text": "Sentence 1 in HINDI (Devanagari)", "image_query": "English Keyword" },
+      { "text": "Sentence 2 in HINDI (Devanagari)", "image_query": "English Keyword" }
+    ]
+    
+--- OUTPUT ---
+**Sentence 1:**
+
+वहने भी जंगली में बांटने के लिए तैयार हो जाए, तो महीसा और रात के बीच भी कुछ वनरों के साथ खेलने की ज़रूरत है।
+
+**English Search Keyword:** game in the jungle
+
+**Sentence 2:**
+
+आद एक वनर के रूप में बांटने के लिए तैयार होने के लिए तैयार हो जाए, तो महीसा और रात के बीच भी कुछ वनरों के साथ खेलने की ज़रूरत है।
+
+**English Search Keyword:** play with friends in the jungle
+----------------
+Error parsing Ollama JSON: Expecting value: line 1 column 1 (char 0). Output was: **Sentence 1:**
+
+वहने भी जंगली में बांटने के लिए तैयार हो जाए, तो महीसा और रात के बीच भी कुछ वनरों के साथ खेलने की ज़रूरत है।
+
+**English Search Keyword:** game in the jungle
+
+**Sentence 2:**
+
+आद एक वनर के रूप में बांटने के लिए तैयार होने के लिए तैयार हो जाए, तो महीसा और रात के बीच भी कुछ वनरों के साथ खेलने की ज़रूरत है।
+
+**English Search Keyword:** play with friends in the jungle
+Gemini Error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Gemini Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 1.899498883s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 1
+}
+]
+Groq Error: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Topic: "Barish kaise hoti hai"
+    Goal: Create a detailed, engaging video script.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments.
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "video_script": [
+      { "text": "वीडियो की शुरुआत में हम बारिश की अवधारणा को समझेंगे", "image_query": "rain clouds gathering" },
+      { "text": "बारिश कैसे होती है, यह समझने के लिए हमें जल चक्र को जानना होगा", "image_query": "water cycle animation" },
+      { "text": "जल चक्र में वाष्पीकरण, संघनन और वर्षा शामिल हैं", "image_query": "evaporation process" },
+      { "text": "सूरज की गर्मी से समुद्र और नदियों का पानी वाष्प में बदल जाता है", "image_query": "sea water evaporation" },
+      { "text": "यह वाष्प वायुमंडल में उठता है और ठंडा होकर संघनित हो जाता है", "image_query": "condensation process" },
+      { "text": "संघनन के बाद यह वाष्प बादलों में बदल जाता है", "image_query": "cloud formation" },
+      { "text": "जब बादल अधिक भारी हो जाते हैं तो वे वर्षा के रूप में पृथ्वी पर गिरते हैं", "image_query": "rainfall from clouds" },
+      { "text": "वर्षा के रूप में बारिश होती है, जो पृथ्वी को हरा-भरा बनाती है", "image_query": "green landscape after rain" },
+      { "text": "बारिश के बिना जीवन असंभव होगा, इसलिए यह हमारे लिए बहुत महत्वपूर्ण है", "image_query": "importance of rain" },
+      { "text": "आशा है कि अब आप बारिश की प्रक्रिया को समझ गए होंगे", "image_query": "rainy day cityscape" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Topic: "Barish kaise hoti hai"
+    Goal: Create a detailed, engaging video script.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 20 segments.
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { "text": "वायुमंडल में जलवाष्प के संघनन से वर्षा होती है।", "image_query": "cloud formation" },
+       { "text": "यह एक जटिल प्रक्रिया है जिसमें कई कारक शामिल होते हैं।", "image_query": "atmospheric conditions" },
+       { "text": "वर्षा के लिए वायुमंडल में आर्द्रता की आवश्यकता होती है।", "image_query": "humidity in air" },
+       { "text": "जब वायुमंडल में आर्द्रता अधिक होती है, तो जलवाष्प संघनित होने लगता है।", "image_query": "water vapor condensation" },
+       { "text": "इस संघनन की प्रक्रिया से बादल बनते हैं।", "image_query": "cloud formation process" },
+       { "text": "बादल वायुमंडल में तैरते हुए जलवाष्प के कणों से बनते हैं।", "image_query": "clouds in the sky" },
+       { "text": "जब बादल अधिक भारी हो जाते हैं, तो वे वर्षा के रूप में पृथ्वी पर गिरने लगते हैं।", "image_query": "heavy clouds and rain" },
+       { "text": "वर्षा के प्रकारों में मौसमी वर्षा, मानसून वर्षा, और पहाड़ी वर्षा शामिल हैं।", "image_query": "types of rainfall" },
+       { "text": "मौसमी वर्षा एक नियमित और अनुमानित प्रक्रिया है।", "image_query": "seasonal rainfall patterns" },
+       { "text": "मानसून वर्षा एक विशेष प्रकार की वर्षा है जो कुछ क्षेत्रों में होती है।", "image_query": "monsoon rainfall" },
+       { "text": "पहाड़ी वर्षा उन क्षेत्रों में होती है जहां पहाड़ वायुमंडल में आर्द्रता को रोकते हैं।", "image_query": "orographic rainfall" },
+       { "text": "वर्षा की प्रक्रिया में वायुमंडलीय दबाव, तापमान, और हवा की दिशा भी महत्वपूर्ण भूमिका निभाते हैं।", "image_query": "atmospheric factors affecting rainfall" },
+       { "text": "वर्षा के परिणामस्वरूप जल संचयन, मिट्टी का क्षरण, और जलवायु परिवर्तन जैसी कई प्रक्रियाएं होती हैं।", "image_query": "effects of rainfall" },
+       { "text": "वर्षा का अध्ययन मौसम विज्ञान और जलवायु विज्ञान में बहुत महत्वपूर्ण है।", "image_query": "study of rainfall in meteorology" },
+       { "text": "वर्षा के पैटर्न और परिणामों को समझने से हमें जल संसाधनों का प्रबंधन करने में मदद मिलती है।", "image_query": "water resource management" },
+       { "text": "वर्षा से संबंधित जानकारी का उपयोग कृषि, जलविद्युत ऊर्जा, और बाढ़ नियंत्रण में किया जा सकता है।", "image_query": "application of rainfall data" },
+       { "text": "वर्षा के बारे में अधिक जानने से हमें प्राकृतिक संसाधनों का संरक्षण करने में मदद मिल सकती है।", "image_query": "conservation of natural resources" },
+       { "text": "वर्षा एक जीवनदायिनी प्रक्रिया है जो हमारे ग्रह को हरा-भरा और जीवन से भरपूर बनाती है।", "image_query": "importance of rainfall for life" },
+       { "text": "वर्षा के बिना, पृथ्वी एक शुष्क और जीवनहीन ग्रह होगी।", "image_query": "earth without rainfall" },
+       { "text": "इसलिए, वर्षा का महत्व समझना और इसका संरक्षण करना हमारे लिए बहुत आवश्यक है।", "image_query": "protecting rainfall and water resources" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Topic: "Cinematic shot of a girl dancing in the rain, happy mood, slow motion"
+    Goal: Create a detailed, engaging video script.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments.
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { "text": "बारिश की बूंदें गिरने लगती हैं", "image_query": "raindrops falling from sky" },
+       { "text": "और एक लड़की नाचने लगती है", "image_query": "girl dancing in the rain" },
+       { "text": "उसके चेहरे पर खुशी की मुस्कान है", "image_query": "close up of happy girl face" },
+       { "text": "बारिश की धुन पर वह थिरकती है", "image_query": "slow motion of girl dancing in rain" },
+       { "text": "पानी की बूंदें उसके चेहरे पर गिरती हैं", "image_query": "water droplets on face" },
+       { "text": "लेकिन वह नहीं रुकती, बस नाचती रहती है", "image_query": "girl twirling in the rain" },
+       { "text": "उसकी खुशी को देखकर लगता है जैसे बारिश भी खुश है", "image_query": "rainy day with sunshine" },
+       { "text": "बारिश की बूंदें उसके बालों को भिगोती हैं", "image_query": "girl with wet hair in rain" },
+       { "text": "लेकिन वह अपने नाच को नहीं रोकती, बस मज़े लेती है", "image_query": "girl spinning in the rain" },
+       { "text": "और इस पल में, वह पूरी तरह से खुश है", "image_query": "girl smiling in slow motion" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Topic: "Cinematic shot of a girl dancing in the rain, happy mood, slow motion"
+    Goal: Create a detailed, engaging video script.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments.
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+      { 
+         "text": "बारिश की बूंदें गिरने लगती हैं और एक युवती खुशी से नाचने लगती है",
+         "image_query": "girl dancing in the rain"
+      },
+      { 
+         "text": "उसके चेहरे पर मुस्कान है और उसकी आँखों में खुशी की चमक है",
+         "image_query": "close up shot of a happy girl"
+      },
+      { 
+         "text": "बारिश की धुन पर वह अपने पैरों को थिरकाती है और अपने हाथों को लहराती है",
+         "image_query": "slow motion shot of a girl dancing"
+      },
+      { 
+         "text": "बारिश की बूंदें उसके चेहरे पर गिरती हैं और वह उन्हें महसूस करती है",
+         "image_query": "girl with raindrops on her face"
+      },
+      { 
+         "text": "यह पल उसके जीवन का एक सुंदर पल है जिसे वह कभी नहीं भूलेगी",
+         "image_query": "girl twirling in the rain with arms outstretched"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "What is AI"
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+      { "text": "नमस्कार दोस्तों, आज हम बात करने जा रहे हैं आर्टिफ़िशियल इंटेलिजेंस यानी कि एआई के बारे में।", "image_query": "artificial intelligence brain" },
+      { "text": "एआई एक ऐसी तकनीक है जो कंप्यूटरों को मानव बुद्धिमत्ता की तरह काम करने में मदद करती है।", "image_query": "robot thinking" },
+      { "text": "इसका मतलब है कि कंप्यूटर मशीनें सीख सकती हैं, समझ सकती हैं और निर्णय ले सकती हैं जैसे कि इंसान करते हैं।", "image_query": "computer learning" },
+      { "text": "एआई का उपयोग कई क्षेत्रों में किया जा रहा है, जैसे कि स्वास्थ्य सेवा, वित्त, शिक्षा और परिवहन।", "image_query": "ai in healthcare" },
+      { "text": "एआई से हमें कई फायदे हो सकते हैं, जैसे कि काम को अधिक कुशलता से करना, समय बचाना और जोखिम को कम करना।", "image_query": "ai benefits" },
+      { "text": "लेकिन एआई के साथ कुछ चुनौतियाँ भी हैं, जैसे कि नौकरियों का ऑटोमेशन और डेटा सुरक्षा की समस्या।", "image_query": "ai challenges" },
+      { "text": "एआई का भविष्य बहुत ही रोमांचक है, और यह तकनीक हमारे जीवन को कई तरह से बदल सकती है।", "image_query": "ai future" },
+      { "text": "तो आइए, एआई के बारे में और जानते हैं और इसके फायदों और चुनौतियों के बारे में चर्चा करते हैं।", "image_query": "ai discussion" },
+      { "text": "एआई की दुनिया में आपका स्वागत है, जहां तकनीक और बुद्धिमत्ता मिलती है।", "image_query": "ai world" },
+      { "text": "आशा है कि आपको एआई के बारे में यह जानकारी पसंद आई होगी, और आप इसके बारे में और जानने के लिए उत्सुक होंगे।", "image_query": "ai information" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: ""Latest News", "Today","
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments":[
+      {
+         "text":"आज की ताज़ा खबरें जानने के लिए हमारे साथ बने रहें।",
+         "image_query":"breaking news"
+      },
+      {
+         "text":"आज दुनिया भर में क्या हो रहा है, इसकी जानकारी देने वाले हमारे समाचार पत्र आपके लिए तैयार हैं।",
+         "image_query":"newspaper headlines"
+      },
+      {
+         "text":"राजनीति, खेल, मनोरंजन, और बहुत कुछ - हमारे पास आपके लिए सभी प्रकार की खबरें हैं।",
+         "image_query":"news categories"
+      },
+      {
+         "text":"हमारी टीम आपको दुनिया भर की खबरों से अपडेट रखती है, ताकि आप जान सकें कि दुनिया में क्या हो रहा है।",
+         "image_query":"newsroom live"
+      },
+      {
+         "text":"चाहे आप घर पर हों या ऑफिस में, हमारी खबरें आपको हर जगह पहुँचाती हैं।",
+         "image_query":"mobile news"
+      },
+      {
+         "text":"हमारा उद्देश्य आपको सटीक और विश्वसनीय जानकारी प्रदान करना है, ताकि आप अपने निर्णय ले सकें।",
+         "image_query":"journalist typing"
+      },
+      {
+         "text":"आज की दुनिया में खबरें बहुत तेजी से बदलती हैं, और हम आपको इन सभी खबरों से अपडेट रखते हैं।",
+         "image_query":"news ticker"
+      },
+      {
+         "text":"हमारी खबरें न केवल जानकारीपूर्ण होती हैं, बल्कि वे मनोरंजक भी होती हैं।",
+         "image_query":"entertainment news"
+      },
+      {
+         "text":"तो बने रहें हमारे साथ और जानें कि आज दुनिया में क्या हो रहा है।",
+         "image_query":"global news"
+      },
+      {
+         "text":"धन्यवाद, और हमें आपकी प्रतिक्रिया की प्रतीक्षा है।",
+         "image_query":"thank you"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Latest top 5 news today"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { 
+           "text": "नमस्कार दोस्तों, आज हम आपके लिए लेकर आए हैं दुनिया की ताज़ा खबरें।",
+           "image_query": "news studio background"
+       },
+       { 
+           "text": "पहली खबर है कि अमेरिकी राष्ट्रपति ने एक नए आर्थिक पैकेज की घोषणा की है।",
+           "image_query": "us president speaking at podium"
+       },
+       { 
+           "text": "दूसरी खबर है कि भारत में कोरोना वायरस के नए मामलों में कमी आई है।",
+           "image_query": "covid 19 vaccination drive in india"
+       },
+       { 
+           "text": "तीसरी खबर है कि यूरोपीय संघ ने रूस पर नए प्रतिबंध लगाए हैं।",
+           "image_query": "european union flag waving"
+       },
+       { 
+           "text": "चौथी खबर है कि चीन ने अपनी आर्थिक विकास दर में वृद्धि की घोषणा की है।",
+           "image_query": "china economic growth graph"
+       },
+       { 
+           "text": "पांचवी और आखिरी खबर है कि नासा ने मंगल ग्रह पर एक नए मिशन की घोषणा की है।",
+           "image_query": "nasa mars mission launch"
+       },
+       { 
+           "text": "इन खबरों के अलावा, दुनिया भर में कई अन्य महत्वपूर्ण घटनाएं घट रही हैं।",
+           "image_query": "world news headlines"
+       },
+       { 
+           "text": "हम आपको इन सभी खबरों के बारे में विस्तार से बताते रहेंगे।",
+           "image_query": "news anchor speaking"
+       },
+       { 
+           "text": "इसके लिए आपको हमारे साथ बने रहना होगा और हमारी वेबसाइट पर नजर रखनी होगी।",
+           "image_query": "news website on laptop screen"
+       },
+       { 
+           "text": "धन्यवाद दोस्तों, हमारे साथ बने रहने के लिए।",
+           "image_query": "thank you message on screen"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 mind-blowing facts about the Universe that will scare you"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments":[
+      { 
+         "text":"ब्रह्मांड के बारे में 5 मनोरंजक तथ्य जो आपको डरा देंगे",
+         "image_query":"universe galaxy"
+      },
+      { 
+         "text":"पहला तथ्य यह है कि ब्रह्मांड का लगभग ९५% हिस्सा अज्ञात है, जिसे हम डार्क मैटर और डार्क एनर्जी कहते हैं",
+         "image_query":"dark matter animation"
+      },
+      { 
+         "text":"दूसरा तथ्य यह है कि ब्रह्मांड में लगभग १०० बिलियन गैलेक्सी हैं, और प्रत्येक गैलेक्सी में अरबों तारे हैं",
+         "image_query":"galaxy formation"
+      },
+      { 
+         "text":"तीसरा तथ्य यह है कि ब्रह्मांड की आयु लगभग १३.८ बिलियन वर्ष है, और यह अभी भी विस्तारित हो रहा है",
+         "image_query":"universe expansion animation"
+      },
+      { 
+         "text":"चौथा तथ्य यह है कि ब्रह्मांड में ब्लैक होल हैं, जो इतने घने हैं कि वे प्रकाश को भी吸ी लेते हैं",
+         "image_query":"black hole simulation"
+      },
+      { 
+         "text":"पांचवा तथ्य यह है कि ब्रह्मांड में एंटीमैटर है, जो सामान्य मैटर के विपरीत है, और इसके गुणों को अभी तक पूरी तरह से समझा नहीं जा सका है",
+         "image_query":"antimatter experiment"
+      },
+      { 
+         "text":"इन तथ्यों को जानने के बाद, हमें यह एहसास होता है कि ब्रह्मांड कितना विशाल और रहस्यमय है, और हमें इसके बारे में अभी भी बहुत कुछ सीखना है",
+         "image_query":"universe mystery"
+      },
+      { 
+         "text":"ब्रह्मांड के बारे में जानने से हमें अपनी जगह और जिम्मेदारी का एहसास होता है, और हमें यह सोचने पर मजबूर किया जाता है कि हम इसका हिस्सा कैसे बन सकते हैं",
+         "image_query":"space exploration"
+      },
+      { 
+         "text":"ब्रह्मांड के बारे में जानने से हमें यह भी एहसास होता है कि हमारी दुनिया कितनी सुंदर और अनोखी है, और हमें इसकी रक्षा और संरक्षण के लिए काम करना चाहिए",
+         "image_query":"earth from space"
+      },
+      { 
+         "text":"अंत में, ब्रह्मांड के बारे में जानने से हमें यह एहसास होता है कि हमारी जिंदगी कितनी छोटी और अस्थायी है, और हमें इसका सबसे अच्छा उपयोग करना चाहिए",
+         "image_query":"universe and human life"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 mind-blowing facts about the Universe that will scare you"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 10 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+      { 
+         "text": "ब्रह्मांड के बारे में 5 अद्भुत तथ्य जो आपको डरा देंगे",
+         "image_query": "universe galaxy space"
+      },
+      { 
+         "text": "ब्रह्मांड का विस्तार इतना अधिक है कि इसकी कल्पना करना मुश्किल है, और यह हमेशा विस्तारित हो रहा है",
+         "image_query": "expanding universe animation"
+      },
+      { 
+         "text": "ब्रह्मांड में इतने सारे तारे और ग्रह हैं कि यदि हम उन्हें गिनने की कोशिश करें, तो यह एक असंभव काम होगा",
+         "image_query": "stars and planets in space"
+      },
+      { 
+         "text": "ब्लैक होल ब्रह्मांड के कुछ ऐसे क्षेत्र हैं जहां गुरुत्वाकर्षण इतना मजबूत होता है कि वहां से निकलना असंभव है",
+         "image_query": "black hole illustration"
+      },
+      { 
+         "text": "ब्रह्मांड में कई ऐसे रहस्यमयी वस्तुएं हैं जिनके बारे में हमें अभी तक जानकारी नहीं मिली है, जैसे कि डार्क मैटर और डार्क एनर्जी",
+         "image_query": "dark matter and dark energy concept"
+      },
+      { 
+         "text": "ब्रह्मांड की उत्पत्ति और इसके भविष्य के बारे में हमें अभी तक पूरी जानकारी नहीं मिली है, और यह एक ऐसा रहस्य है जिसे सुलझाने की कोशिश वैज्ञानिक लगातार कर रहे हैं",
+         "image_query": "big bang theory animation"
+      },
+      { 
+         "text": "ब्रह्मांड में जीवन की उत्पत्ति कैसे हुई, यह एक ऐसा प्रश्न है जिसका उत्तर हमें अभी तक नहीं मिला है, और यह एक ऐसा रहस्य है जिसे सुलझाने की कोशिश वैज्ञानिक लगातार कर रहे हैं",
+         "image_query": "origin of life on earth"
+      },
+      { 
+         "text": "ब्रह्मांड के बारे में जानने से हमें अपने ग्रह और अपने जीवन के बारे में अधिक जानकारी मिलती है, और यह हमें अपने अस्तित्व के बारे में सोचने पर मजबूर करता है",
+         "image_query": "earth from space"
+      },
+      { 
+         "text": "ब्रह्मांड के रहस्यमयी और अद्भुत तथ्यों को जानने से हमें एक नई दृष्टि मिलती है और यह हमें अपने जीवन को नए दृष्टिकोण से देखने के लिए प्रेरित करता है",
+         "image_query": "universe mystery"
+      },
+      { 
+         "text": "ब्रह्मांड के बारे में जानने से हमें एक नई यात्रा पर ले जाता है जिसमें हम अपने जीवन के बारे में अधिक जानकारी प्राप्त करते हैं और अपने अस्तित्व के बारे में सोचने पर मजबूर होते हैं",
+         "image_query": "space exploration"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Summary of Surah Al-Fatiha with peaceful nature and mosque background"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 20 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+       { "text": "In the heart of Islamic tradition lies the Surah Al-Fatiha, a chapter of the Quran that embodies the essence of peace, guidance, and reverence.", "image_query": "mosque peaceful landscape" },
+       { "text": "The name Al-Fatiha, meaning 'The Opening', signifies its role as the first chapter of the Quran, setting the tone for the entirety of the holy book.", "image_query": "quran opening page" },
+       { "text": "Comprising just seven verses, Surah Al-Fatiha is a masterpiece of concise yet profound wisdom, touching on the fundamentals of faith and the human condition.", "image_query": "islamic calligraphy surah al fatiha" },
+       { "text": "It begins with the invocation of Allah, the Most Merciful, the Most Compassionate, immediately establishing a theme of mercy and benevolence that permeates the entire surah.", "image_query": "allah merciful calligraphy" },
+       { "text": "The second verse, 'Praise be to Allah, the Lord of the universe', reaffirms the sovereignty of Allah, recognizing Him as the sole object of worship and the source of all creation.", "image_query": "universe creation islamic" },
+       { "text": "The surah then guides believers on the path of righteousness, seeking guidance from Allah, 'The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray'.", "image_query": "righteous path islamic" },
+       { "text": "This verse underscores the importance of humility and the quest for divine approval, distinguishing between those who have been blessed with guidance and those who have strayed from the path.", "image_query": "humility in prayer" },
+       { "text": "The repetitive recitation of Surah Al-Fatiha in daily prayers serves as a constant reminder of the believer's covenant with Allah, reinforcing the principles of worship, gratitude, and the pursuit of spiritual growth.", "image_query": "muslim in prayer" },
+       { "text": "Its significance extends beyond the individual, fostering a sense of community among Muslims worldwide, united in their devotion and commitment to the teachings of the Quran.", "image_query": "global muslim community" },
+       { "text": "In times of turmoil and uncertainty, Surah Al-Fatiha offers solace and reassurance, its words a balm to the soul, guiding believers towards tranquility and peace.", "image_query": "peaceful muslim landscape" },
+       { "text": "The surah's emphasis on mercy, forgiveness, and the benevolence of Allah resonates deeply, encouraging an outlook of hope and optimism, even in the face of adversity.", "image_query": "allah is merciful" },
+       { "text": "Through its timeless message, Surah Al-Fatiha transcends the boundaries of time and space, speaking directly to the heart of every believer, inspiring a deeper connection with the divine.", "image_query": "divine connection islamic" },
+       { "text": "As a foundational element of Islamic worship, Surah Al-Fatiha plays a pivotal role in shaping the spiritual identity of Muslims, influencing their worldview and informing their interactions with the world.", "image_query": "islamic spiritual identity" },
+       { "text": "Its study and recitation are considered acts of worship, rewarding the believer with spiritual growth and a heightened sense of awareness and purpose.", "image_query": "quran study group" },
+       { "text": "In the tranquil ambiance of a mosque, surrounded by the serene beauty of Islamic architecture, the recitation of Surah Al-Fatiha becomes an immersive experience, enveloping the believer in an atmosphere of peace and contemplation.", "image_query": "mosque interior peaceful" },
+       { "text": "Here, amidst the soothing sounds of prayer and the gentle rustle of Quranic pages, the believer finds solace, their spirit uplifted by the promise of divine mercy and guidance.", "image_query": "prayer in mosque" },
+       { "text": "Surah Al-Fatiha stands as a beacon of hope, illuminating the path to enlightenment, and reminding believers of their place within the grand tapestry of creation, interconnected and interdependent.", "image_query": "islamic hope and enlightenment" },
+       { "text": "Through its elegant simplicity and profound depth, this surah continues to inspire generations, a timeless testament to the power of faith and the human quest for meaning and transcendence.", "image_query": "generations of muslims" },
+       { "text": "As the sun sets over a serene landscape, casting a warm glow over a mosque, the recitation of Surah Al-Fatiha becomes a symphony of peace, a celebration of the divine presence that permeates all aspects of life.", "image_query": "serene landscape with mosque" },
+       { "text": "In this peaceful ambiance, believers come together, united in their devotion, their hearts filled with the joy and serenity that comes from embracing the teachings of Surah Al-Fatiha.", "image_query": "muslim community united" },
+       { "text": "And so, the story of Surah Al-Fatiha unfolds, a narrative of faith, hope, and the unwavering pursuit of spiritual enlightenment, set against the backdrop of a world in constant flux.", "image_query": "quran and the world" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Summary of Surah Al-Fatiha with peaceful nature and mosque background"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 20 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+       { "text": "सुरह अल-फातिहा कुरान की पहली सूरत है और इसका अर्थ है 'पवित्र कुरान की शुरुआत'", "image_query": "mosque peaceful background" },
+       { "text": "यह सूरत अल्लाह की महानता और उसकी एकता को दर्शाती है", "image_query": "allah calligraphy" },
+       { "text": "सुरह अल-फातिहा में अल्लाह से दुआ की जाती है कि वह हमें सही रास्ते पर चलाए", "image_query": "prayer in mosque" },
+       { "text": "इस सूरत को पढ़ने से मन को शांति और सुकून मिलता है", "image_query": "peaceful nature scenery" },
+       { "text": "सुरह अल-फातिहा कुरान का एक महत्वपूर्ण हिस्सा है और इसे दिन में पांच समय नमाज में पढ़ा जाता है", "image_query": "five times prayer in islam" },
+       { "text": "यह सूरत अल्लाह की रहमत और उसकी दया को दर्शाती है", "image_query": "allah mercy" },
+       { "text": "सुरह अल-फातिहा को पढ़ने से हमें अल्लाह की महानता और उसकी एकता का एहसास होता है", "image_query": "allahu akbar" },
+       { "text": "यह सूरत हमें अल्लाह के रास्ते पर चलने और उसकी दुआ को मानने के लिए प्रेरित करती है", "image_query": "islamic calligraphy" },
+       { "text": "सुरह अल-फातिहा का अर्थ है 'पवित्र कुरान की शुरुआत' और यह कुरान की पहली सूरत है", "image_query": "quran first page" },
+       { "text": "इस सूरत को पढ़ने से हमें अल्लाह की महानता और उसकी एकता का एहसास होता है", "image_query": "allah is one" },
+       { "text": "सुरह अल-फातिहा हमें अल्लाह के रास्ते पर चलने और उसकी दुआ को मानने के लिए प्रेरित करती है", "image_query": "right path in islam" },
+       { "text": "यह सूरत अल्लाह की रहमत और उसकी दया को दर्शाती है", "image_query": "allah forgiveness" },
+       { "text": "सुरह अल-फातिहा कुरान का एक महत्वपूर्ण हिस्सा है और इसे दिन में पांच समय नमाज में पढ़ा जाता है", "image_query": "five times prayer" },
+       { "text": "इस सूरत को पढ़ने से मन को शांति और सुकून मिलता है", "image_query": "peaceful mosque" },
+       { "text": "सुरह अल-फातिहा अल्लाह की महानता और उसकी एकता को दर्शाती है", "image_query": "allahu akbar calligraphy" },
+       { "text": "यह सूरत हमें अल्लाह के रास्ते पर चलने और उसकी दुआ को मानने के लिए प्रेरित करती है", "image_query": "right path" },
+       { "text": "सुरह अल-फातिहा का अर्थ है 'पवित्र कुरान की शुरुआत' और यह कुरान की पहली सूरत है", "image_query": "quran cover" },
+       { "text": "इस सूरत को पढ़ने से हमें अल्लाह की महानता और उसकी एकता का एहसास होता है", "image_query": "allah is great" },
+       { "text": "सुरह अल-फातिहा हमें अल्लाह के रास्ते पर चलने और उसकी दुआ को मानने के लिए प्रेरित करती है", "image_query": "islamic prayer" },
+       { "text": "यह सूरत अल्लाह की रहमत और उसकी दया को दर्शाती है", "image_query": "allah mercy and forgiveness" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Summary of Surah Al-Fatiha with peaceful nature and mosque background"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+       { 
+           "text": "अस्सलामु अलैकुम, आज हम सूरह अल-Fatiha के बारे में बात करेंगे जो कुरआन की पहली सूरह है और इसकी बहुत बड़ी महत्ता है इस्लामिक धर्म में", 
+           "image_query": "peaceful mosque background"
+       },
+       { 
+           "text": "सूरह अल-Fatiha में ७ आयतें हैं और यह अल्लाह की महानता और उसके गुणों का वर्णन करती है", 
+           "image_query": "quran pages turning"
+       },
+       { 
+           "text": "इस सूरह में अल्लाह से दुआ की जाती है कि वह हमें सही रास्ते पर चलाए और हमें अपनी रहमत से नवाजे", 
+           "image_query": "person praying in mosque"
+       },
+       { 
+           "text": "सूरह अल-Fatiha का पाठ करने से मन को शांति मिलती है और यह हमें अल्लाह के करीब लाती है", 
+           "image_query": "peaceful nature scenery"
+       },
+       { 
+           "text": "आइए हम सूरह अल-Fatiha का पाठ करें और अल्लाह से दुआ करें कि वह हमें अपनी रहमत और आशीर्वाद से नवाजे", 
+           "image_query": "group of people praying together in mosque"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Top 20 motivation tips"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 20 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+      { "text": "स्वागत है दोस्तों, आज हम बात करने जा रहे हैं प्रेरणा के बारे में।", "image_query": "motivation quotes background" },
+      { "text": "प्रेरणा हमें आगे बढ़ने की शक्ति देती है, और हमें अपने लक्ष्यों को प्राप्त करने में मदद करती है।", "image_query": "person running towards goal" },
+      { "text": "तो आइए जानते हैं प्रेरणा के शीर्ष 20 टिप्स, जो आपको सफल बनाने में मदद करेंगे।", "image_query": "top 20 motivation tips graphic" },
+      { "text": "पहला टिप है स्पष्ट लक्ष्य निर्धारित करना। अपने लक्ष्यों को लिखें और उन्हें प्राप्त करने के लिए काम करें।", "image_query": "person writing goals in journal" },
+      { "text": "दूसरा टिप है सकारात्मक सोच। नकारात्मक विचारों को दूर करें और सकारात्मक विचारों पर ध्यान केंद्रित करें।", "image_query": "person meditating in nature" },
+      { "text": "तीसरा टिप है आत्म-विश्वास। अपने आप पर विश्वास करें और अपनी क्षमताओं पर भरोसा करें।", "image_query": "person standing confidently in front of crowd" },
+      { "text": "चौथा टिप है समय प्रबंधन। अपने समय को प्रभावी ढंग से प्रबंधित करें और अपने लक्ष्यों को प्राप्त करने के लिए काम करें।", "image_query": "person managing time on calendar" },
+      { "text": "पांचवा टिप है स्व-देखभाल। अपने शारीरिक और मानसिक स्वास्थ्य का ध्यान रखें और स्वस्थ जीवनशैली का पालन करें।", "image_query": "person practicing yoga" },
+      { "text": "छठा टिप है जोखिम लेना। अपने डर को दूर करें और नए अवसरों का लाभ उठाएं।", "image_query": "person taking risk and trying new things" },
+      { "text": "सातवा टिप है अनुकूलन। अपने आप को नई परिस्थितियों के अनुसार अनुकूल बनाएं और बदलते समय के साथ तालमेल बिठाएं।", "image_query": "person adapting to new situations" },
+      { "text": "आठवा टिप है सीखने की इच्छा। नए कौशल सीखें और अपने ज्ञान को बढ़ाएं।", "image_query": "person reading books and learning new skills" },
+      { "text": "नौवा टिप है धैर्य। अपने लक्ष्यों को प्राप्त करने के लिए धैर्य रखें और हार न मानें।", "image_query": "person persevering and never giving up" },
+      { "text": "दसवा टिप है सकारात्मक लोगों के साथ रहना। सकारात्मक लोगों के साथ समय बिताएं और उनकी ऊर्जा से प्रेरित हों।", "image_query": "person surrounded by positive and supportive people" },
+      { "text": "ग्यारहवा टिप है आत्म-मूल्यांकन। अपने आप का मूल्यांकन करें और अपने मजबूत और कमजोर बिंदुओं को पहचानें।", "image_query": "person evaluating themselves and setting goals" },
+      { "text": "बारहवा टिप है लक्ष्यों को प्राप्त करने के लिए कार्रवाई करना। अपने लक्ष्यों को प्राप्त करने के लिए कार्रवाई करें और उन्हें हासिल करें।", "image_query": "person taking action and achieving goals" },
+      { "text": "तेरहवा टिप है प्रतिकूल परिस्थितियों में भी सकारात्मक रहना। प्रतिकूल परिस्थितियों में भी सकारात्मक रहें और उनसे सीखें।", "image_query": "person staying positive in difficult situations" },
+      { "text": "चौदहवा टिप है अपने आप को पुरस्कृत करना। अपने आप को पुरस्कृत करें और अपनी उपलब्धियों का जश्न मनाएं।", "image_query": "person rewarding themselves and celebrating achievements" },
+      { "text": "पंद्रहवा टिप है अपने आप को चुनौती देना। अपने आप को चुनौती दें और नए क्षेत्रों में प्रवेश करें।", "image_query": "person challenging themselves and stepping out of comfort zone" },
+      { "text": "सोलहवा टिप है अपने आप को विकसित करना। अपने आप को विकसित करें और अपने कौशल को बढ़ाएं।", "image_query": "person developing themselves and improving skills" },
+      { "text": "सत्रहवा टिप है अपने आप को माफ करना। अपने आप को माफ करें और अपने गलतियों से सीखें।", "image_query": "person forgiving themselves and learning from mistakes" },
+      { "text": "अठारहवा टिप है अपने आप को प्रेरित करना। अपने आप को प्रेरित करें और अपने लक्ष्यों को प्राप्त करने के लिए प्रेरित रहें।", "image_query": "person motivating themselves and staying motivated" },
+      { "text": "उन्नीसवा टिप है अपने आप को समर्पित करना। अपने आप को समर्पित करें और अपने लक्ष्यों को प्राप्त करने के लिए काम करें।", "image_query": "person dedicating themselves to their goals" },
+      { "text": "बीसवा टिप है अपने आप को विश्वास दिलाना। अपने आप को विश्वास दिलाएं और अपनी क्षमताओं पर भरोसा करें।", "image_query": "person believing in themselves and their abilities" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "barish kaise hoti h"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { 
+           "text": "नमस्कार दोस्तों, आज हम बात करेंगे बारिश कैसे होती है",
+           "image_query": "rain falling from sky"
+       },
+       { 
+           "text": "बारिश एक प्राकृतिक प्रक्रिया है जिसमें वायुमंडल में उपस्थित जलवाष्प जमीन पर गिरता है",
+           "image_query": "water evaporation process"
+       },
+       { 
+           "text": "जब सूरज की गर्मी से समुद्र, नदियों और झीलों का पानी गर्म होता है, तो वह जलवाष्प में बदल जाता है",
+           "image_query": "sun heating ocean water"
+       },
+       { 
+           "text": "यह जलवाष्प वायुमंडल में ऊपर उठता है और ठंडा होकर बादलों में जमा होता है",
+           "image_query": "cloud formation process"
+       },
+       { 
+           "text": "जब बादल अधिक भारी हो जाते हैं, तो जलवाष्प बारिश के रूप में जमीन पर गिरता है",
+           "image_query": "heavy rain shower"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 fun facts about men"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { 
+           "text": "नमस्ते दोस्तों, आज हम पुरुषों के बारे में ५ मजेदार तथ्यों पर चर्चा करेंगे।", 
+           "image_query": "men talking"
+       },
+       { 
+           "text": "पुरुषों की तुलना में महिलाओं में ग्रे मैटर की मात्रा अधिक होती है, जो उन्हें अधिक भावनात्मक बनाती है।", 
+           "image_query": "male female brain comparison"
+       },
+       { 
+           "text": "पुरुषों की औसत आयु ७० वर्ष होती है, जबकि महिलाओं की औसत आयु ७२ वर्ष होती है।", 
+           "image_query": "male female age comparison"
+       },
+       { 
+           "text": "पुरुषों में टेस्टोस्टेरोन हार्मोन की मात्रा अधिक होती है, जो उन्हें अधिक मांसपेशियों वाला बनाती है।", 
+           "image_query": "testosterone hormone"
+       },
+       { 
+           "text": "पुरुषों की सुनने की क्षमता महिलाओं की तुलना में कम होती है, खासकर उच्च आवृत्ति पर।", 
+           "image_query": "male female hearing comparison"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 fun facts about men"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+      { 
+         "text": "नमस्कार दोस्तों, आज हम पुरुषों के बारे में ५ रोचक तथ्य जानेंगे।",
+         "image_query": "fun facts about men"
+      },
+      { 
+         "text": "पहला तथ्य यह है कि पुरुषों की तुलना में महिलाओं की औसत आयु अधिक होती है। इसका मतलब है कि महिलाएं आमतौर पर पुरुषों की तुलना में अधिक समय तक जीवित रहती हैं।",
+         "image_query": "male vs female life expectancy graph"
+      },
+      { 
+         "text": "दूसरा तथ्य यह है कि पुरुषों में महिलाओं की तुलना में अधिक मांसपेशियों की मात्रा होती है। यही कारण है कि पुरुष आमतौर पर महिलाओं की तुलना में अधिक शारीरिक शक्ति रखते हैं।",
+         "image_query": "male and female body structure comparison"
+      },
+      { 
+         "text": "तीसरा तथ्य यह है कि पुरुषों की तुलना में महिलाओं में अधिक वसा होती है। यह वसा महिलाओं को गर्मी और ऊर्जा प्रदान करती है, खासकर गर्भावस्था के दौरान।",
+         "image_query": "male and female body fat percentage comparison"
+      },
+      { 
+         "text": "अंत में, पुरुषों के बारे में एक और रोचक तथ्य यह है कि वे आमतौर पर महिलाओं की तुलना में अधिक जोखिम भरे कार्यों में शामिल होते हैं। यह जोखिम भरा व्यवहार पुरुषों को अधिक रोमांचक और चुनौतीपूर्ण अनुभव प्रदान करता है।",
+         "image_query": "men doing extreme sports"
+      }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 fun facts"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+       { "text": "नमस्कार दोस्तों, आज हम आपके लिए ५ मजेदार तथ्य लेकर आए हैं।", "image_query": "fun facts animation" },
+       { "text": "पहला तथ्य यह है कि ब्लू व्हेल दुनिया का सबसे बड़ा जानवर है, जिसका वजन लगभग १८० मेट्रिक टन होता है।", "image_query": "blue whale underwater footage" },
+       { "text": "दूसरा तथ्य यह है कि सूर्य प्रतिदिन लगभग ४००० अरब मेगावाट बिजली का उत्पादन करता है, जो पूरी पृथ्वी की ऊर्जा जरूरतों को पूरा करने के लिए पर्याप्त है।", "image_query": "sun solar energy animation" },
+       { "text": "तीसरा तथ्य यह है कि मानव मस्तिष्क प्रति घंटे लगभग १० वाट बिजली का उत्पादन करता है, जो एक छोटे से बल्ब को जलाने के लिए पर्याप्त है।", "image_query": "human brain electricity illustration" },
+       { "text": "अंत में, हम आशा करते हैं कि आपको ये तथ्य रोचक और ज्ञानवर्धक लगे होंगे। धन्यवाद!", "image_query": "fun facts conclusion animation" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "5 facts about AI"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       { 
+           "text": "नमस्कार दोस्तों, आज हम बात करने जा रहे हैं आर्टिफ़िशियल इंटेलिजेंस के बारे में।",
+           "image_query": "artificial intelligence concept"
+       },
+       { 
+           "text": "पहला तथ्य यह है कि आर्टिफ़िशियल इंटेलिजेंस एक मशीन को मानव बुद्धिमत्ता जैसी क्षमता प्रदान करता है।",
+           "image_query": "robot thinking"
+       },
+       { 
+           "text": "दूसरा तथ्य यह है कि आर्टिफ़िशियल इंटेलिजेंस का उपयोग विभिन्न क्षेत्रों में किया जा रहा है, जैसे कि स्वास्थ्य सेवा, वित्त, और शिक्षा।",
+           "image_query": "ai in healthcare"
+       },
+       { 
+           "text": "तीसरा तथ्य यह है कि आर्टिफ़िशियल इंटेलिजेंस के विकास में मशीन लर्निंग और डीप लर्निंग जैसी तकनीकों का बहुत बड़ा योगदान है।",
+           "image_query": "machine learning algorithm"
+       },
+       { 
+           "text": "चौथा तथ्य यह है कि आर्टिफ़िशियल इंटेलिजेंस के भविष्य में बहुत संभावनाएं हैं, लेकिन इसके साथ ही जिम्मेदारी भी है कि हम इसका सही तरीके से उपयोग करें।",
+           "image_query": "future of artificial intelligence"
+       },
+       { 
+           "text": "पांचवा तथ्य यह है कि आर्टिफ़िशियल इंटेलिजेंस ने हमारे दैनिक जीवन को बहुत सरल बना दिया है, जैसे कि वirtual असिस्टेंट और स्मार्ट होम डिवाइस।",
+           "image_query": "smart home devices"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "girl dancing"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "script": [
+       { "text": "एक लड़की जो नाचती है, उसकी खूबसूरती और उसकेSteps की सुंदरता को देखकर हमें बहुत आनंद आता है।", "image_query": "girl dancing in studio" },
+       { "text": "नाचना एक कला है जो हमारे दिल को खुशी देती है और हमें जीवन की चुनौतियों का सामना करने की शक्ति देती है।", "image_query": "dancing as an art form" },
+       { "text": "लड़की के नाचने की शैली और उसके हाथों की गति देखकर हमें लगता है कि वह एक पेशेवर डांसर है।", "image_query": "professional female dancer" },
+       { "text": "नाचने से हमारे शरीर को व्यायाम मिलता है और हमारा मन भी खुश रहता है, इसलिए नाचना हमारे लिए बहुत फायदेमंद है।", "image_query": "dancing for exercise and fun" },
+       { "text": "लड़की का नाचना देखकर हमें अपने जीवन में खुशी और संतुष्टि की भावना महसूस होती है।", "image_query": "girl dancing in outdoor location" }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Allah is the One who created everything we see and everything we cannot see.
+He is Al-Khaliq, the Creator, who brought the universe into existence with perfect balance and wisdom.
+Allah is closer to us than our own heartbeat, always listening, always aware.
+
+In moments of ease, He gives us blessings we often forget to count.
+In moments of hardship, He gives us strength, patience, and hope.
+Allah is Ar-Rahman and Ar-Rahim — the Most Merciful, the Most Compassionate — whose mercy is greater than our mistakes.
+
+When we feel lost, Allah is our guide.
+When we feel weak, Allah is our support.
+And when the whole world turns away, Allah never does.
+
+Turning to Allah brings peace to the heart, clarity to the mind, and purpose to life.
+Remember Him, trust Him, and know that with Allah, you are never alone."
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "अल्लाह वह एकमात्र है जिसने हमारी दृष्टि में आने वाली और नहीं आने वाली हर चीज़ को बनाया है।",
+           "image_query": "universe creation"
+       },
+       {
+           "text": "वह अल-खालिक, रचनाकार है, जिसने ब्रह्माण्ड को पूर्ण संतुलन और बुद्धिमत्ता के साथ अस्तित्व में लाया। अल्लाह हमारी自己的 धड़कन से भी हमारे करीब है, हमेशा सुनता है, हमेशा जागरूक रहता है।",
+           "image_query": "allah is closer to us"
+       },
+       {
+           "text": "सुख के क्षणों में, वह हमें ऐसे आशीर्वाद देता है जिन्हें हम अक्सर गिनना भूल जाते हैं। कठिनाई के क्षणों में, वह हमें ताकत, धैर्य और आशा देता है। अल्लाह अर-रहमान और अर-रहीम — सबसे दयालु, सबसे दयालु — जिसकी दया हमारी गलतियों से अधिक है।",
+           "image_query": "allah is merciful"
+       },
+       {
+           "text": "जब हम खोए हुए महसूस करते हैं, तो अल्लाह हमारे मार्गदर्शक हैं। जब हम कमजोर महसूस करते हैं, तो अल्लाह हमारा समर्थन है। और जब पूरी दुनिया हमें पीछे छोड़ देती है, तो अल्लाह कभी नहीं करता है।",
+           "image_query": "allah is our guide"
+       },
+       {
+           "text": "अल्लाह की ओर मुड़ने से दिल में शांति आती है, दिमाग में स्पष्टता आती है और जीवन में उद्देश्य आता है। उसे याद रखें, उस पर भरोसा रखें, और जानें कि अल्लाह के साथ, आप कभी अकेले नहीं होते हैं।",
+           "image_query": "peace and harmony in life"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "Allah is the One who created everything we see and everything we cannot see.
+He is Al-Khaliq, the Creator, who brought the universe into existence with perfect balance and wisdom.
+Allah is closer to us than our own heartbeat, always listening, always aware.
+
+In moments of ease, He gives us blessings we often forget to count.
+In moments of hardship, He gives us strength, patience, and hope.
+Allah is Ar-Rahman and Ar-Rahim — the Most Merciful, the Most Compassionate — whose mercy is greater than our mistakes.
+
+When we feel lost, Allah is our guide.
+When we feel weak, Allah is our support.
+And when the whole world turns away, Allah never does.
+
+Turning to Allah brings peace to the heart, clarity to the mind, and purpose to life.
+Remember Him, trust Him, and know that with Allah, you are never alone."
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in HINDI (Devanagari Script). IMPORTANT: Write the 'text' in clear Hindi, but keep 'image_query' in English.).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "अल्लाह वह एकमात्र है जिसने हमारी दृष्टि में आने वाली और नहीं आने वाली हर चीज़ को बनाया है।",
+           "image_query": "universe creation"
+       },
+       {
+           "text": "वह अल-खालिक, रचनाकार है, जिसने ब्रह्मांड को उत्पत्ति में लाया है और उसमें पूर्ण संतुलन और बुद्धिमत्ता के साथ बनाया है। अल्लाह हमारी धड़कन से भी करीब है, हमेशा सुन रहा है, हमेशा जागरूक है।",
+           "image_query": "allah is closer"
+       },
+       {
+           "text": "सुख के क्षणों में, वह हमें आशीर्वाद देता है जिन्हें हम अक्सर गिनना भूल जाते हैं। कठिनाई के क्षणों में, वह हमें ताकत, धैर्य और आशा देता है। अल्लाह अर-रह曼 और अर-रहीम — सबसे दयालु, सबसे दयालु — जिसकी दया हमारी गलतियों से बड़ी है।",
+           "image_query": "allah blessings"
+       },
+       {
+           "text": "जब हम खोये हुए महसूस करते हैं, तो अल्लाह हमारे मार्गदर्शक हैं। जब हम कमजोर महसूस करते हैं, तो अल्लाह हमारा समर्थन है। और जब पूरी दुनिया हमें छोड़ देती है, तो अल्लाह कभी नहीं छोड़ता।",
+           "image_query": "allah guidance"
+       },
+       {
+           "text": "अल्लाह की ओर मुड़ने से दिल में शांति आती है, मन में स्पष्टता आती है और जीवन में उद्देश्य आता है। उसे याद रखें, उस पर विश्वास करें और जानें कि अल्लाह के साथ आप कभी अकेले नहीं हैं।",
+           "image_query": "peace and clarity"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "It's 12:17 AM on a stormy night. The rain has stopped, but the streets are still glistening with water. A lone figure, Arav, stands at a bus stop, his phone battery dwindling to 3%. The last bus is nowhere to be seen.",
+           "image_query": "stormy night bus stop"
+       },
+       {
+           "text": "Suddenly, an old bus appears in the distance, its headlights shining like dim, aged eyes. The bus stops, and the driver asks Arav if he wants to get on. Despite feeling uneasy, Arav boards the bus.",
+           "image_query": "old bus at night"
+       },
+       {
+           "text": "The bus is eerily silent, with around 8-10 passengers staring out the window. The conductor hands Arav a ticket with the destination 'Antim Padao' written on it. When Arav asks the conductor about the destination, he replies, 'It's where everyone gets off.'",
+           "image_query": "bus interior at night"
+       },
+       {
+           "text": "As the bus journey progresses, the scenery outside changes. The streets give way to dense, twisted forests. Passengers start getting off at various stops, each with an air of mystery and foreboding. Arav begins to feel a sense of dread.",
+           "image_query": "twisted forest at night"
+       },
+       {
+           "text": "The bus eventually stops at a final destination, surrounded by old, crumbling gravestones. The conductor reveals that Arav's name is on a list of passengers who were supposed to board the bus. It dawns on Arav that he is actually a ghost, and the bus was his journey to the afterlife.",
+           "image_query": "old graveyard at night"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "It's 12:17 AM on a rainy night. The streets are empty and wet, reflecting the streetlights like a mirror. A lone figure, Aarav, stands at a bus stop, his phone battery dying, and no sign of the last bus.",
+           "image_query": "rainy night street empty bus stop"
+       },
+       {
+           "text": "Suddenly, an old bus appears in the distance, its headlights dim and yellow, like the eyes of an old soul. The bus stops, and the driver asks Aarav if he wants to get on, without even looking at him.",
+           "image_query": "old bus headlights rainy night"
+       },
+       {
+           "text": "Aarav gets on the bus, and it's eerily silent. There are about 8-10 people sitting, all staring out the window, not speaking to each other. The conductor gives Aarav a ticket with the destination 'Antim Padao', which means 'The Final Stop'.",
+           "image_query": "empty bus interior people staring out window"
+       },
+       {
+           "text": "As the bus moves, the scenery outside changes. The streetlights disappear, and the buildings are replaced by dark, twisted trees. Passengers start getting off at various stops, each with their own mysterious story to tell.",
+           "image_query": "bus driving through dark forest"
+       },
+       {
+           "text": "Aarav realizes that he is on a journey to the afterlife, and the bus is taking him to his final destination. The conductor reveals that Aarav's time had come, and he was late. The bus stops at a cemetery, and Aarav's name is on a grave, with the time of his death being 11:48 PM.",
+           "image_query": "cemetery graves bus stop"
+       }
+   ]
+}
+----------------
+--- GROQ PROMPT ---
+
+    Role: Professional Video Script Writer.
+    Input: "आख़िरी बस
+
+रात के ठीक 12:17 बजे थे।
+बारिश रुक चुकी थी, लेकिन सड़कें अब भी गीली चमक रही थीं।
+आरव बस स्टॉप पर अकेला खड़ा था। मोबाइल की बैटरी 3% दिखा रही थी और आख़िरी बस का कोई पता नहीं था।
+
+तभी दूर से एक पुरानी सी बस आती दिखी।
+उसके हेडलाइट्स पीले थे, जैसे बहुत पुरानी आँखें।
+
+बस रुकी।
+ड्राइवर ने बिना उसकी तरफ़ देखे कहा,
+“चढ़ना है?”
+
+आरव को अजीब लगा—इतनी रात को भी बस चल रही थी।
+फिर भी वो चढ़ गया।
+
+बस के अंदर अजीब सन्नाटा था।
+करीब 8–10 लोग बैठे थे, सब खिड़की की तरफ़ देख रहे थे।
+कोई बात नहीं कर रहा था।
+कंडक्टर ने टिकट दिया—उस पर जगह का नाम लिखा था: “अंतिम पड़ाव”।
+
+आरव ने पूछा,
+“भैया, ये कौन सी जगह है?”
+
+कंडक्टर ने पहली बार उसकी तरफ़ देखा।
+उसकी आँखें… बिल्कुल खाली थीं।
+उसने धीरे से कहा,
+“जहाँ सब उतरते हैं।”
+
+बस चल पड़ी।
+
+जैसे-जैसे बस आगे बढ़ी, सड़क बदलती गई।
+स्ट्रीट लाइट्स गायब हो गईं।
+इमारतों की जगह पेड़ आ गए—काले, टेढ़े-मेढ़े।
+
+एक स्टॉप आया।
+एक बूढ़ी औरत उतरी।
+उतरते वक़्त उसने आरव की तरफ़ देखा और फुसफुसाई,
+“तुम्हें नहीं आना चाहिए था…”
+
+आरव का दिल तेज़ धड़कने लगा।
+
+अगले स्टॉप पर एक आदमी उतरा—उसका चेहरा जला हुआ था।
+फिर एक बच्चा, जिसके पैर ज़मीन को छू ही नहीं रहे थे।
+
+अब बस में सिर्फ़ 3 लोग बचे थे।
+आरव, ड्राइवर और कंडक्टर।
+
+आरव ने घबराकर कहा,
+“मुझे अगले स्टॉप पर उतरना है।”
+
+ड्राइवर हँसा।
+उसकी हँसी… इंसानी नहीं थी।
+
+कंडक्टर बोला,
+“अब वापसी नहीं होती।”
+
+बस अचानक रुक गई।
+चारों तरफ़ कब्रें थीं।
+टूटी हुई, पुरानी, काई से भरी।
+
+कंडक्टर ने कहा,
+“आ गया तुम्हारा स्टॉप।”
+
+आरव चिल्लाया,
+“मैं ज़िंदा हूँ! मुझे जाना है!”
+
+कंडक्टर ने जेब से एक फ़ाइल निकाली।
+उसमें एक फोटो थी—आरव की।
+नीचे लिखा था: आज रात, 11:48
+
+आरव को याद आया।
+बारिश में सड़क पार करते वक़्त…
+एक तेज़ हॉर्न…
+और फिर अंधेरा।
+
+बस का दरवाज़ा खुला।
+ठंडी हवा आई।
+
+ड्राइवर बोला,
+“तुम बस थोड़ा देर से आए हो।”
+
+आरव के पैर अपने आप बस से उतर गए।
+
+पीछे से बस की आवाज़ आई,
+“अगला यात्री…”
+
+और बस अंधेरे में गायब हो गई।
+
+अगली सुबह…
+उसी सड़क के पास एक नई कब्र थी।
+नाम लिखा था—
+
+आरव
+
+और कब्र के पास खड़ा कोई इंतज़ार कर रहा था…
+आज रात की बस के लिए।"
+    
+    Goal: Create a detailed, engaging video script.
+    
+    Instructions:
+    1. If the Input is a TOPIC (e.g. "Facts about Cars"): Write a script about it.
+    2. If the Input is a QUESTION (e.g. "How does rain happen?"): Answer it in a video script format.
+    3. If the Input is a LONG SCRIPT (e.g. "Hello everyone, today we..."): KEEP the text exactly as is (or translate if needed), just split it into segments and add visual cues.
+    
+    Constraints:
+    1. Language for Narration ('text'): ENGLISH
+    2. Duration: Approximately 5 segments (Ignore if Custom Script).
+    3. Output Format: STRICT JSON Array.
+    
+    Each segment must have:
+    - "text": The narration script (in ENGLISH).
+    - "image_query": A specific, visual English keyword for stock footage search.
+    - "image_query": A specific, visual English keyword for stock footage search.
+
+    Example Output:
+    [
+      { "text": "India is a land of vibrant culture.", "image_query": "india culture festival" },
+      { "text": "Taj Mahal is a symbol of love.", "image_query": "taj mahal drone shot" }
+    ]
+    
+--- OUTPUT ---
+{
+  "segments": [
+       {
+           "text": "It's 12:17 AM on a rainy night. The streets are empty and wet, reflecting the streetlights like a mirror. A lone figure, Arav, stands at a bus stop, his phone battery almost dead, waiting for the last bus.",
+           "image_query": "empty wet street at night"
+       },
+       {
+           "text": "Suddenly, an old bus appears in the distance, its headlights shining like old eyes. The bus stops, and the driver asks Arav if he wants to get on. Despite feeling strange, Arav boards the bus.",
+           "image_query": "old bus at night"
+       },
+       {
+           "text": "The bus is eerily silent, with around 8-10 passengers staring out the window. The conductor gives Arav a ticket with the destination 'Antim Padao', which means 'The Final Stop'. Arav asks the conductor where they are going, and the conductor replies, 'Where everyone gets off'.",
+           "image_query": "people staring out bus window"
+       },
+       {
+           "text": "As the bus journeys on, the scenery outside changes. The streets give way to dense, dark forests. Passengers start getting off at various stops, each with their own unique and unsettling story. Arav begins to feel a sense of dread and tries to get off, but the conductor tells him it's too late.",
+           "image_query": "dark forest at night"
+       },
+       {
+           "text": "The bus finally reaches its destination, a graveyard filled with old, crumbling tombstones. The conductor reveals that Arav is actually dead, and this bus is a journey to the afterlife. Arav's spirit steps off the bus, and as the bus drives away, a new grave appears with his name on it, waiting for the next passenger.",
+           "image_query": "graveyard at night"
+       }
+   ]
+}
+----------------

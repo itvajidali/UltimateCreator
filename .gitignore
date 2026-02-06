@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# Project Output
+static/output/
+static/downloads/
+*.mp4
+*.jpg
+*.png
+!static/logo.png
+
+# IDE
+.vscode/
+.idea/

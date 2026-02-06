@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Creator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> AI Video Creator
+            </div>
+            <p class="subtitle">Turn text into engaging videos in seconds.</p>
+        </header>
+
+        <main>
+            <section class="api-key-warning" id="api-warning" style="display: none;">
+                <div class="warning-box">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>It looks like API keys are missing. Please check your configuration.</span>
+                </div>
+            </section>
+
+            <section class="creation-form">
+                <div class="input-group">
+                    <label for="prompt">Topic, Question, or Paste Full Script:</label>
+                    <textarea id="prompt"
+                        placeholder="e.g. '5 fun facts about AI', 'How does rain happen?', or paste your full script here..."
+                        rows="5"></textarea>
+                </div>
+
+                <div class="options-row">
+                    <div class="input-group">
+                        <label for="duration">Duration</label>
+                        <select id="duration">
+                            <option value="short">Short (30s)</option>
+                            <option value="medium">Medium (1min)</option>
+                            <option value="long">Long (2-3min)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="orientation">Format</label>
+                        <select id="orientation">
+                            <option value="landscape">YouTube (16:9)</option>
+                            <option value="portrait">Shorts/Reels (9:16)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="options-row">
+                    <div class="input-group">
+                        <label for="voiceId">Narrator Voice</label>
+                        <select id="voiceId">
+                            <option value="en-US-AndrewMultilingualNeural">Andrew (Male - Calm)</option>
+                            <option value="en-US-AvaMultilingualNeural">Ava (Female - Professional)</option>
+                            <option value="en-US-BrianMultilingualNeural">Brian (Male - Deep)</option>
+                            <option value="en-US-EmmaMultilingualNeural">Emma (Female - Soft)</option>
+                            <option value="hi-IN-SwaraNeural">Swara (Hindi - Female)</option>
+                            <option value="hi-IN-MadhurNeural">Madhur (Hindi - Male)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="mood">Background Music</label>
+                        <select id="mood">
+                            <option value="random">Random</option>
+                            <option value="epic">Epic / Action</option>
+                            <option value="happy">Happy / Upbeat</option>
+                            <option value="sad">Sad / Emotional</option>
+                            <option value="horror">Horror / Dark</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="create-btn" class="primary-btn">
+                    <i class="fa-solid fa-video"></i> Create Video
+                </button>
+            </section>
+
+            <section id="processing-state" class="processing-state hidden">
+                <div class="loader-container">
+                    <div class="spinner"></div>
+                    <h3 id="status-text">Generating Script...</h3>
+                    <p id="status-detail">AI is thinking...</p>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </section>
+
+            <section id="result-area" class="result-area hidden">
+                <h2><i class="fa-solid fa-check-circle"></i> Video Ready!</h2>
+                <div class="video-preview">
+                    <!-- Video tag will be inserted here -->
+                </div>
+                <div class="actions">
+                    <a id="download-btn" href="#" class="secondary-btn">
+                        <i class="fa-solid fa-download"></i> Download Video
+                    </a>
+
+                    <a id="download-thumb-btn" href="#" class="secondary-btn"
+                        style="display:none; background: #e67e22;">
+                        <i class="fa-solid fa-image"></i> Thumbnail
+                    </a>
+
+                    <a id="download-dub-btn" href="#" class="secondary-btn" style="display:none; background: #27ae60;">
+                        <i class="fa-solid fa-language"></i> Hindi Dub
+                    </a>
+
+                    <button class="text-btn" onclick="location.reload()">Create Another</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
